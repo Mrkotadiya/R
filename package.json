@@ -1,0 +1,32 @@
+{
+  "name": "mern-ecommerce-website-master",
+  "version": "1.0.0",
+  "description": "ecomm",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Dharmik",
+  "license": "MIT",
+  "dependencies": {
+    "@paypal/react-paypal-js": "^7.8.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.2",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "resolve": "^1.22.1",
+    "stripe": "^11.17.0"
+  }
+}
